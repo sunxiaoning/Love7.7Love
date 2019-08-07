@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>for love</title>
+    </head>
+    <body>
+        <!-- William love Joyce -->
+        <button type="button" id="startBtn" style="color: red">Love7.7Love</button>
+        <p id="happy_container" style="text-align:center;font-size:18px;color:red"></p>
+        <script>
+            document.getElementById("startBtn").onclick = function() {
+                setInterval(function sayHappyWords() {
+                    var happy_words = [
+                    'Life will becomes better and better!', 
+                    'You are my heart！', 
+                    'I love you forever, and I know you know it!',
+                    'Love is to love you!',
+                    'You are my world!',
+                    'For you, I can give up the world!'
+                    ];
+                    document.getElementById("happy_container").innerHTML = happy_words[Math.floor(Math.random() * happy_words.length)];
+                }, 1000)
+            }
+        </script>
+    </body>
+</html>
